@@ -39,6 +39,10 @@ Make sure to checkout the repository (actions/checkout@v2) to provide the ZAP ru
 
 **Optional** Additional command lines options for the full scan script
 
+### `allow_issue_writing`
+
+**Optional** Set to `false` if you don't want to create Github issues for the alerts. Defaults to `true`.
+
 ### `issue_title`
 
 **Optional** The title for the GitHub issue to be created.
@@ -52,10 +56,6 @@ You do not have to create a dedicated token. Make sure to use the GitHub's defau
 
 **Optional** By default ZAP Docker container will fail with an [exit code](https://github.com/zaproxy/zaproxy/blob/efb404d38280dc9ecf8f88c9b0c658385861bdcf/docker/zap-full-scan.py#L31), 
 if it identifies any alerts. Set this option to `true` if you want to fail the status of the GitHub Scan if ZAP identifies any alerts during the scan.
-
-### `allow_issue_writing`
-
-**Optional** By default the baseline action will file the report to the GitHub issue using the issue_title input. Set this to `false` if you don't want the issue to be created or updated.
 
 ## Example usage
 
