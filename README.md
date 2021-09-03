@@ -55,7 +55,7 @@ if it identifies any alerts. Set this option to `true` if you want to fail the s
 
 ### `allow_issue_writing`
 
-**Optional** Set to `false` if you don't want to create Github issues for the alerts. Defaults to `true`.
+**Optional** By default the baseline action will file the report to the GitHub issue using the issue_title input. Set this to `false` if you don't want the issue to be created or updated.
 
 ## Example usage
 
