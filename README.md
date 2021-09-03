@@ -53,6 +53,10 @@ You do not have to create a dedicated token. Make sure to use the GitHub's defau
 **Optional** By default ZAP Docker container will fail with an [exit code](https://github.com/zaproxy/zaproxy/blob/efb404d38280dc9ecf8f88c9b0c658385861bdcf/docker/zap-full-scan.py#L31), 
 if it identifies any alerts. Set this option to `true` if you want to fail the status of the GitHub Scan if ZAP identifies any alerts during the scan.
 
+### `allow_issue_writing`
+
+**Optional** Set to `false` if you don't want to create Github issues for the alerts. Defaults to `true`.
+
 ## Example usage
 
 ** Basic **
