@@ -39,6 +39,10 @@ Make sure to checkout the repository (actions/checkout@v2) to provide the ZAP ru
 
 **Optional** Additional command lines options for the full scan script
 
+### `allow_issue_writing`
+
+**Optional** Set to `false` if you don't want to create Github issues for the alerts. Defaults to `true`.
+
 ### `issue_title`
 
 **Optional** The title for the GitHub issue to be created.
